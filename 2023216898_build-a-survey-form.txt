@@ -1,0 +1,151 @@
+** HTML **
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+    <title>Survey Form</title>
+     <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">Survey form
+    </h1>
+      <p id="description">This is a survey regarding preffered learning method.Students are <b>required</b> to complete this form.
+      </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:
+        <input id="name" type="text" required placeholder="Enter your name">
+      </label><br></br>
+
+      <label id="email-label" for="email">Email: 
+        <input id="email" type="email" required placeholder="Enter your email">
+      </label><br></br>
+
+      <label id="number-label" for="number">Number: 
+        <input id="number" type="number" min="1" max="100" placeholder="Enter your number">
+      </label><br></br>
+      <label id="class-label" for="class">Class:<br> 
+        <select id="dropdown">
+          <option value="">Select your class--
+          </option>
+          <option value="star">Star
+          </option>
+          <option value="moon">Moon
+          </option>
+          <option value="sun">Sun
+          </option>
+          <option value="planet">Planet
+          </option>
+        </select> 
+      </label><br>
+      <p>What is your preferred learning method?</p>
+      <label>
+        <input type="radio" name="learning" value="online"> Online
+      </label><br>
+      <label>
+        <input type="radio" name="learning" value="in-person"> In-person
+      </label><br>
+      <label>
+        <input type="radio" name="learning" value="hybrid"> Hybrid
+      </label><br></br>
+      <p>What devices do you currently use? (You can select more than one)</p>
+      <label>
+        <input type="checkbox" name="device" value="laptop"> Laptop
+      </label><br>
+      <label>
+        <input type="checkbox" name="device" value="smartphone"> Smartphone
+      </label><br>
+      <label>
+        <input type="checkbox" name="device" value="tablet"> Tablet
+      </label><br>
+      <label>
+        <input type="checkbox" name="device" value="desktop"> Desktop Computer
+      </label><br></br>
+      <label>Describe why you prefer the selected learning method:
+      </label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your comments here...">
+        </textarea><br><br>
+      <button type="submit" id="submit">Submit</button>
+    </form> 
+    </body>
+</html>
+
+
+
+
+** CSS **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  margin: 0;
+  padding: 20px;
+}
+
+#title {
+  text-align: center;
+  color: #2c3e50;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+#survey-form {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: pink;
+}
+button:active {
+  background-color: pink;
+}
+
+
+
+
