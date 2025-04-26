@@ -1,0 +1,124 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tribute Page - Marie Curie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Marie Curie: A Pioneer of Science</h1>
+
+    <div id="img-div">
+      <img 
+        id="image" 
+        src="https://cdn.britannica.com/10/74610-050-19CB330C/Marie-Curie-Paris-laboratory.jpg" 
+        alt="Marie Curie Portrait"
+        style="display: block; max-width: 100%; height: auto; margin: 0 auto;"
+      >
+      <div id="img-caption">
+        Marie Curie, the first woman to win a Nobel Prize, and the only person to win Nobel Prizes in two different sciences (Physics and Chemistry).
+      </div>
+    </div>
+
+    <section id="tribute-info">
+      <p>Marie Curie (1867–1934) was a physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize and remains the only person awarded Nobel Prizes in two different scientific fields.</p>
+      <p>Born in Warsaw, Poland, Curie moved to Paris to study at the Sorbonne, where she met her husband and scientific partner, Pierre Curie. Together, they discovered the radioactive elements polonium and radium. Her groundbreaking work laid the foundation for modern physics and cancer therapies.</p>
+      <p>Despite numerous obstacles as a woman in science, Curie broke through barriers, inspiring generations to come. Her legacy continues to influence science and society today.</p>
+    </section>
+
+    <a id="tribute-link" href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank">
+      Learn more about Marie Curie
+    </a>
+  </main>
+</body>
+</html>
+___________________________________________________________________________________________________
+
+CSS
+
+/* Base styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Center everything inside main */
+#main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+#title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Image container */
+#img-div {
+  margin: 30px 0;
+}
+
+/* Image itself */
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Image caption */
+#img-caption {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Tribute info section */
+#tribute-info {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Add some space between paragraphs */
+#tribute-info p {
+  margin-bottom: 20px;
+}
+
+/* Tribute link button */
+#tribute-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#tribute-link:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+
+
+
